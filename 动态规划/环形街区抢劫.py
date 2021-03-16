@@ -35,4 +35,4 @@ class Solution(object):
                     nosteal=opty[i-1]
                     opty[i]=max(steal,nosteal)
             #print(opt_yes[n-1],opt_no[n-1])
-        return max(opty[len(nums_y)-1],optn[len(nums_n)-1])
+        return max(opty[len(nums_y)-1],optn[len(nums_n)-1])  

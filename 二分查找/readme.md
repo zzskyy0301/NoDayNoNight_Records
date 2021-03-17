@@ -6,3 +6,4 @@
 ![image](https://user-images.githubusercontent.com/77591939/111394769-bf222d00-8691-11eb-955e-4786244c99de.png)
 最后一定是返回l的
 
+对于g(m)定义：想左右两边区间有什么不同，例如左边区间是单数个，右边偶数个。

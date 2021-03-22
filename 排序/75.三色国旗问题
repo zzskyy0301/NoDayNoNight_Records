@@ -1,0 +1,30 @@
+class Solution(object):
+    def sortColors(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+
+        ptr=-1
+        def swap(arr,i,j):
+           
+            temp=arr[i]
+            arr[i]=arr[j]
+            arr[j]=temp
+            
+            return arr
+        for i in range(0,len(nums)):
+            if nums[i]==0:
+                ptr+=1
+                nums=swap(nums,i,ptr)
+                
+            else:
+                pass
+        for j in range(ptr+1,len(nums)):
+            if nums[j]==1:
+                ptr+=1
+                nums=swap(nums,ptr,j)
+            else:
+                pass
+        return nums
+                

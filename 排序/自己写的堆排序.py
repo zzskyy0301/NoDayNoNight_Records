@@ -29,9 +29,9 @@ def heap_sort(arr):
      print(arr[i])
      temp=arr[0]
      arr[0]=arr[i]
-     arr[i]=temp
+     arr[i]=temp #arr[i]是最大值了
      print(arr[0:i])
-     arr[0:i]=heapify(arr[0:i],0).copy()
+     arr[0:i]=heapify(arr[0:i],0).copy() #对置换之后的进行heapify
      print('heapresult',arr)
    return arr
 heap_sort([2,5,3,1,4,10])

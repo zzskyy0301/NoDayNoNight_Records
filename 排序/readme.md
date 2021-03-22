@@ -15,4 +15,6 @@
 ![image](https://user-images.githubusercontent.com/77591939/111889240-20ac0980-89ba-11eb-8191-64eb8c929dce.png)
 # 归并排序
 [讲解视频](https://www.bilibili.com/video/BV1Ax411U7Xx/?spm_id_from=333.788.recommend_more_video.3)
+如果完全乱序，则需要先分治
+# 桶排序
 

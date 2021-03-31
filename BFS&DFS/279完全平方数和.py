@@ -21,3 +21,31 @@ class Solution(object):
   '''方法二：BFS，不会超出限制'''
   
         
+import math
+class Solution(object):
+    def numSquares(self,n):
+        sqlist=[i**2 for i in range(1,int(math.sqrt(n))+1)]#别忘了加一
+        #print(sqlist)
+        path_l=0
+        queue=[n]
+        if n in sqlist :
+                return 1
+        while len(queue)!=0:
+            path_l+=1
+            print(queue,path_l)
+            #node=queue.pop(0)
+            sub_queue=[]
+            for node in queue:
+                for sqnum in sqlist:
+                    if sqnum>=node:
+                        break
+                    else:
+                        remains=node-sqnum
+                        print(node,sqnum,path_l)
+                        if remains in sqlist and path_l!=1:
+                            return path_l+1
+                        elif remains in sqlist and path_l==1:
+                            return path_l+1
+                        else:
+                            sub_queue.append(remains)
+            queue=sub_queue

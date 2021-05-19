@@ -13,13 +13,16 @@ class Solution(object):
         def path(node):
             if not node:
                 return 0
-            left=right=0
+            pl=0
+            pr=0
+            l=path(node.left)
+            r=path(node.right)
             if node.left and node.val==node.left.val :
-                left=path(node.left)+1
+                pl=l+1
             if node.right and node.val==node.right.val:
-                right=path(node.right)+1
-            self.ans=max(self.ans,left+right)
-            return max(left,right)
+                pr=r+1
+            self.ans=max(self.ans,pl+pr)
+            return max(pl,pr)
         self.ans=0
         path(root)  
         return self.ans

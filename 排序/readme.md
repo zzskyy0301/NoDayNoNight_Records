@@ -17,5 +17,7 @@
 # 归并排序
 [讲解视频](https://www.bilibili.com/video/BV1Ax411U7Xx/?spm_id_from=333.788.recommend_more_video.3)
 如果完全乱序，则需要先分治
+![image](https://user-images.githubusercontent.com/77591939/167935219-1e7f18a8-8c34-47c4-9dbd-e6aa12e31e4f.png)
+
 # 桶排序 （最高频率K问题）
 

@@ -6,7 +6,7 @@
 # 1. 快速排序
 [讲解视频B站](https://www.bilibili.com/video/BV1at411T75o?from=search&seid=9636167989300706984)
  ![image](https://user-images.githubusercontent.com/77591939/111845773-e8ce9480-88db-11eb-939e-e0acde3127e9.png)
- 其实应该是大于等于P的在右边，小于等于P在左边，避免很多数字一样的情况
+
 # 2.Top K elements 堆排序
 [B站讲解](https://www.bilibili.com/video/BV1Eb41147dK?from=search&seid=8309990242936887539)
 1.使用堆排序的条件：（完全二叉树：从上往下从左往右依次生成节点+父母>孩子）

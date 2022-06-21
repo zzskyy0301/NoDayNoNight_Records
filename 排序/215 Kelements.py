@@ -1,3 +1,39 @@
+'''pivot选在中间的快速排序'''
+class Solution(object):
+    def findKthLargest(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        if len(nums)<k:
+            return Null
+        else:  
+            return self.quickselect(nums,0,len(nums)-1,k)
+    def quickselect(self,arr,l,r,k):
+        pivot=arr[(l+r)/2]
+        i=l
+        j=r
+        while (i<=j):
+            while i<=j and arr[i]>pivot:
+                i+=1
+            while i<=j and arr[j]<pivot:
+                j-=1
+            if i<=j:
+                temp=arr[i]
+                arr[i]=arr[j]
+                arr[j]=temp
+                i+=1
+                j-=1
+        if l+k-1<=j:
+            return self.quickselect(arr,l,j,k)
+        if l+k-1>=i:
+            return self.quickselect(arr,i,r,k-(i-l))
+        #print(arr,arr[j+1])
+        return arr[j+1]
+
+
+'''pivot选在边上的快速排序'''        
 class Solution(object):
     def findKthLargest(self, nums, k):
         """

@@ -6,7 +6,9 @@
 # 1. 快速排序
 [讲解视频B站](https://www.bilibili.com/video/BV1at411T75o?from=search&seid=9636167989300706984)
  ![image](https://user-images.githubusercontent.com/77591939/111845773-e8ce9480-88db-11eb-939e-e0acde3127e9.png)
-
+空间复杂度 O(1)
+时间 nlog(n)
+不稳定排序
 # 2.Top K elements 堆排序
 [B站讲解](https://www.bilibili.com/video/BV1Eb41147dK?from=search&seid=8309990242936887539)
 1.使用堆排序的条件：（完全二叉树：从上往下从左往右依次生成节点+父母>孩子）
@@ -17,7 +19,9 @@
 # 归并排序
 [讲解视频](https://www.bilibili.com/video/BV1Ax411U7Xx/?spm_id_from=333.788.recommend_more_video.3)
 如果完全乱序，则需要先分治
-![image](https://user-images.githubusercontent.com/77591939/167935219-1e7f18a8-8c34-47c4-9dbd-e6aa12e31e4f.png)
-
+![image](https://user-images.githubusercontent.com/77591939/167935219-1e7f18a8-8c34-47c4-9dbd-e6aa12e31e4f.png)、
+空间复杂度O（n）
+时间 nlog(n)
+稳定排序
 # 桶排序 （最高频率K问题）
 
